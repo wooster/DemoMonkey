@@ -166,7 +166,7 @@ NSString *MovedRowsUTI = @"com.yourcompany.demomonkey.movedrows";
 
 - (void)add:sender {
     // Add a new object, then select its row.
-    Step *newObject = [super newObject];
+    Step *newObject = [self newObject];
     NSUInteger row = [[self arrangedObjects] count];
     [self insertObject:newObject atArrangedObjectIndex:row];
     [tableView selectRowIndexes:[NSIndexSet indexSetWithIndex:row] byExtendingSelection:NO];
