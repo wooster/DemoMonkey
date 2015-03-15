@@ -16,6 +16,7 @@
 		28B2AF1E080F91AA00403FAE /* Step.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B2AF1D080F91AA00403FAE /* Step.m */; };
 		28DABBB80FBF22D500694A30 /* ReadMe.txt in Resources */ = {isa = PBXBuildFile; fileRef = 28DABBB70FBF22D500694A30 /* ReadMe.txt */; };
 		28DABBBB0FBF233F00694A30 /* DMKArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28DABBBA0FBF233F00694A30 /* DMKArrayController.m */; };
+		4383A90F1AB6246600084CF2 /* NSWindow+RSWGracefulEndEditingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4383A90E1AB6246600084CF2 /* NSWindow+RSWGracefulEndEditingAdditions.m */; };
 		696661D41AB61CDC0054CC80 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 696661D31AB61CDC0054CC80 /* Images.xcassets */; };
 		775DFF38067A968500C5B868 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
 		8D15AC2D0486D014006FF6A4 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */; };
@@ -48,6 +49,8 @@
 		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32DBCF750370BD2300C91783 /* DemoMonkey_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoMonkey_Prefix.pch; sourceTree = "<group>"; };
+		4383A90D1AB6246500084CF2 /* NSWindow+RSWGracefulEndEditingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSWindow+RSWGracefulEndEditingAdditions.h"; sourceTree = "<group>"; };
+		4383A90E1AB6246600084CF2 /* NSWindow+RSWGracefulEndEditingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSWindow+RSWGracefulEndEditingAdditions.m"; sourceTree = "<group>"; };
 		696661D31AB61CDC0054CC80 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = DemoMonkey/Images.xcassets; sourceTree = "<group>"; };
 		7788DA0506752A1600599AAD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		8D15AC360486D014006FF6A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -118,6 +121,7 @@
 				28EB618D0FB8A38F00739008 /* Application Delegate */,
 				28B2AF9808108D3600403FAE /* Array Controller */,
 				E1B74B1A0667B4A90069E3BA /* Model */,
+				4383A90C1AB6241C00084CF2 /* Helpers */,
 				2A37F4AFFDCFA73011CA2CEA /* Other Sources */,
 				2A37F4B8FDCFA73011CA2CEA /* Resources */,
 				2A37F4C3FDCFA73011CA2CEA /* Frameworks */,
@@ -169,6 +173,15 @@
 				1058C7A8FEA54F5311CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4383A90C1AB6241C00084CF2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4383A90D1AB6246500084CF2 /* NSWindow+RSWGracefulEndEditingAdditions.h */,
+				4383A90E1AB6246600084CF2 /* NSWindow+RSWGracefulEndEditingAdditions.m */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 		E1B74B1A0667B4A90069E3BA /* Model */ = {
@@ -257,6 +270,7 @@
 				28B2AF1E080F91AA00403FAE /* Step.m in Sources */,
 				289915970818FD6700EA8C28 /* AppDelegate.m in Sources */,
 				28DABBBB0FBF233F00694A30 /* DMKArrayController.m in Sources */,
+				4383A90F1AB6246600084CF2 /* NSWindow+RSWGracefulEndEditingAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
