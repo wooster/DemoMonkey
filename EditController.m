@@ -49,6 +49,7 @@
 #import "EditController.h"
 #import "Step.h"
 #import "MyDocument.h"
+#import "NSWindow+RSWGracefulEndEditingAdditions.h"
 
 
 @implementation EditController
@@ -99,6 +100,12 @@
     NSPasteboard *generalPasteboard = [NSPasteboard generalPasteboard];
     [generalPasteboard clearContents];
     [generalPasteboard writeObjects:objects];
+}
+
+- (IBAction)add:sender {
+    [self.window rsw_endEditing];
+    
+    [self.arrayController add:sender];
 }
 
 
