@@ -158,7 +158,7 @@ NSString *MovedRowsUTI = @"com.yourcompany.demomonkey.movedrows";
     // Configure a new object.
     Step *newObject = [super newObject];
     NSUInteger row = [[self arrangedObjects] count];
-    newObject.tableSummary = [NSString stringWithFormat:@"Step %d", (row +1)];
+    newObject.tableSummary = [NSString stringWithFormat:@"Step %@", @(row +1)];
     newObject.undoManager = [[windowController document] undoManager];
     return newObject;
 }
