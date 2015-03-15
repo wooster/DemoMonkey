@@ -56,5 +56,6 @@
 @property (assign) IBOutlet NSArrayController *arrayController;
 
 - (IBAction)paste:sender;
+- (IBAction)add:sender;
 
 @end
