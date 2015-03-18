@@ -93,7 +93,7 @@
     
     Step *newStep = [newSteps objectAtIndex:0];    
     NSUInteger currentStepCount = [self countOfSteps];    
-    newStep.tableSummary = [NSString stringWithFormat:@"Step %d", currentStepCount];
+    newStep.tableSummary = [NSString stringWithFormat:@"Step %@", @(currentStepCount)];
     newStep.undoManager = [self undoManager];
     
     [self insertObject:newStep inStepsAtIndex:currentStepCount];    
@@ -186,7 +186,7 @@
     [steps removeObjectAtIndex:idx];
 }
 
-- (void)replaceObjectInStepsAtIndex:(unsigned int)idx withObject:(id)anObject {
+- (void)replaceObjectInStepsAtIndex:(NSUInteger)idx withObject:(id)anObject {
     
     id oldObject = [self objectInStepsAtIndex:idx];
     [[[self undoManager] prepareWithInvocationTarget:self] replaceObjectInStepsAtIndex:idx withObject:oldObject];

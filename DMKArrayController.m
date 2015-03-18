@@ -158,7 +158,7 @@ NSString *MovedRowsUTI = @"com.yourcompany.demomonkey.movedrows";
     // Configure a new object.
     Step *newObject = [super newObject];
     NSUInteger row = [[self arrangedObjects] count];
-    newObject.tableSummary = [NSString stringWithFormat:@"Step %d", (row +1)];
+    newObject.tableSummary = [NSString stringWithFormat:@"Step %@", @(row +1)];
     newObject.undoManager = [[windowController document] undoManager];
     return newObject;
 }
@@ -166,7 +166,7 @@ NSString *MovedRowsUTI = @"com.yourcompany.demomonkey.movedrows";
 
 - (void)add:sender {
     // Add a new object, then select its row.
-    Step *newObject = [super newObject];
+    Step *newObject = [self newObject];
     NSUInteger row = [[self arrangedObjects] count];
     [self insertObject:newObject atArrangedObjectIndex:row];
     [tableView selectRowIndexes:[NSIndexSet indexSetWithIndex:row] byExtendingSelection:NO];
